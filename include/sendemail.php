@@ -6,20 +6,22 @@ $mail = new PHPMailer();
 
 if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactform-submit'] == 'submit' ) {
     if( $_POST['template-contactform-name'] != '' AND $_POST['template-contactform-email'] != '' AND $_POST['template-contactform-message'] != '' ) {
-
+            
         $name = $_POST['template-contactform-name'];
         $email = $_POST['template-contactform-email'];
         $phone = $_POST['template-contactform-phone'];
+        $kinname = $_POST['template-contactform-namekin'];
+        $kinno = $_POST['template-contactform-phonekin'];
         $service = $_POST['template-contactform-service'];
         $subject = $_POST['template-contactform-subject'];
         $message = $_POST['template-contactform-message'];
 
-        $subject = isset($subject) ? $subject : 'New Message From Contact Form';
+        $subject = isset($subject) ? $subject : 'KMG Singapore Third Party Protection - Registration entries';
 
         $botcheck = $_POST['template-contactform-botcheck'];
 
-        $toemail = 'username@email.com'; // Your Email Address
-        $toname = 'Your Name'; // Your Name
+        $toemail = 'gunawan.febby@gmail.com'; // Your Email Address
+        $toname = 'Febby'; // Your Name
 
         if( $botcheck == '' ) {
 
@@ -31,8 +33,9 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
             $name = isset($name) ? "Name: $name<br><br>" : '';
             $email = isset($email) ? "Email: $email<br><br>" : '';
             $phone = isset($phone) ? "Phone: $phone<br><br>" : '';
-            $service = isset($service) ? "Service: $service<br><br>" : '';
-            $message = isset($message) ? "Message: $message<br><br>" : '';
+            $kinname = isset($kinname) ? "Name Of Kin: $kinname<br><br>" : '';
+            $kinno = isset($kinno) ? "Contact No. Of Kin: $kinname<br><br>" : '';
+            $message = isset($message) ? "Medical History: $message<br><br>" : '';
 
             $referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 
