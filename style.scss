@@ -80,7 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #444;
+	color: #fff;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
@@ -3264,7 +3264,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 #content {
 	position: relative;
 	overflow: hidden;
-	background-color: #F5F5F5;
+	background-color: #000;
 }
 
 #content p { line-height: 1.8; }
@@ -7245,7 +7245,7 @@ body:not(.device-touch) .button.button-full strong {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 0;
-	color: #333;
+	color: #FB7C13;
 }
 
 .feature-box p {
@@ -7560,7 +7560,7 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box h3 span.subtitle {
 	display: block;
 	margin-top: 5px;
-	color: #444;
+	color: #FFF;
 	font-weight: 300;
 	text-transform: none;
 }
@@ -7593,8 +7593,8 @@ body:not(.device-touch) .button.button-full strong {
 .feature-box.fbox-bg.fbox-center {
 	margin-top: 68px;
 	padding: 68px 30px 30px;
-	background-color: #FFF;
-	border: 1px solid #E5E5E5;
+	background-color: #363535;
+    border: 1px solid #000000;
 	border-radius: 5px;
 }
 
@@ -7622,7 +7622,9 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-bg.fbox-center.fbox-plain .fbox-icon,
 .feature-box.fbox-bg.fbox-center.fbox-border .fbox-icon,
-.feature-box.fbox-bg.fbox-center.fbox-outline .fbox-icon { background-color: #F5F5F5; }
+.feature-box.fbox-bg.fbox-center.fbox-outline .fbox-icon { 
+	// background-color: #000; 
+}
 
 
 /* Animated Icon Hovers
@@ -10427,7 +10429,8 @@ label {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #555;
+	//change to KMG default color
+	color: #FFF;
 	margin-bottom: 10px;
 	cursor: pointer;
 }
@@ -10456,6 +10459,11 @@ form .col_five_sixth { margin-bottom: 25px; }
 	Contact Form
 -----------------------------------------------------------------*/
 
+//KMG custom form
+.kmg-form{
+	background: rgba(90, 89, 89,0.6);
+    padding: 25px;
+}
 
 #contact-form-overlay,
 #contact-form-overlay-mini {
@@ -10709,7 +10717,7 @@ label.error { display: none !important; }
 .fancy-title h6 {
 	position: relative;
 	display: inline-block;
-	background-color: #F5F5F5;
+	background-color: #363535;
 	padding-right: 15px;
 	margin-bottom: 0;
 }
