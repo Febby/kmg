@@ -20,8 +20,8 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
 
         $botcheck = $_POST['template-contactform-botcheck'];
 
-        $toemail = 'gunawan.febby@gmail.com'; // Your Email Address
-        $toname = 'Febby'; // Your Name
+        $toemail = 'info@kmg.com.sg'; // Your Email Address
+        $toname = 'KMG'; // Your Name
 
         if( $botcheck == '' ) {
 
